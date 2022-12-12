@@ -1,3 +1,4 @@
+//action
 const sections = document.querySelectorAll('.section');
 const secBtns = document.querySelectorAll('.controlls');
 const secBtn = document.querySelectorAll('.control');
@@ -28,6 +29,12 @@ function PageTransitions(){
             const element=document.getElementById(id);
             element.classList.add('active');
         }
+    })
+    // toggle
+    const themebtn=document.querySelector('.theme-btn');
+    themebtn.addEventListener('click',()=>{
+        let element=document.body;
+        element.classList.toggle('light-mode')
     })
 }
 
